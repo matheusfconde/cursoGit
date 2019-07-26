@@ -1,0 +1,14 @@
+git clone URI | CLONAR DO SERVIDOR PARA MÁQUINA LOCAL
+git tag | para verificar as versões que estão no repositorio.
+git checkout | para pegar a versão do código que está disponível no repositório.
+git diff v0.1 v0.2 | pegar a diferença dos códigos nas versões
+
+git ls-files | verificar quais arquiviso estão sendo monitorados pelo git
+git status | verifica situação da pasta
+git add NOME DO ARQUIVO | para adicionar para ser controlado.
+git commit -m "Criando Projeto" | dando commit nas alterações
+
+git config user.name "nome"
+git config user.email "email@email.com"
+
+git whatchanged para saber as alterações
