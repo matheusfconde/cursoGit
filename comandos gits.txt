@@ -12,3 +12,5 @@ git config user.name "nome"
 git config user.email "email@email.com"
 
 git whatchanged para saber as alterações
+git remote add origin https://github.com/matheusfconde/cursoGit.git
+git push origin master
