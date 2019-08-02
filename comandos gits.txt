@@ -11,6 +11,41 @@ git commit -m "Criando Projeto" | dando commit nas alterações
 git config user.name "nome"
 git config user.email "email@email.com"
 
-git whatchanged para saber as alterações
 git remote add origin https://github.com/matheusfconde/cursoGit.git
-git push origin master
+git push origin master | envia os dados
+
+git log | historico de commits feitos
+git whatchanged | historico de commits feitos com quais arquivos alterados
+git whatchanged -p| historico de commits feitos com quais arquivos alterados e suas alteracoes
+
+--
+
+git clone link do repositorio para clonar um repositório ja existente.
+
+aula 4 branchs
+git branch | para pegar as branchs locais
+git branch -r | lista branchs remotas
+git branch -a | lista branchs remotas e locais
+git branch NOME | para criar branch
+git checkout NOME para trabalhr na branch.]
+git branch -t Nome origin/nome | criar branch local amarrada à branch remota.
+git branch -d | deleta branchs remota. -D força o delete
+
+git ls | para listar os arquivos do repositório.
+
+git push -u origin design | envia os dados alegando que o branch local é identico ao remoto
+git pull origin Design   | pega o conteúdo da branch
+
+git checkout -b NOME | cria a branch e já muda para a branch no momemnto da criação.
+
+Uma sequência de tarefas bem comum referente à cópia de uma branch localizada num repositório remoto é:
+
+Criação de uma branch local com o mesmo nome da branch remota
+Mudança para essa nova branch criada
+Criação de link entre a branch local e remota
+Para evitar toda essa tarefa, o git nos fornece um atalho para evitar esse trabalho todo com uma opção do comando git checkout. Que opção é essa?
+com o comando git checkout -t origin/design, todo esse trabalho é feito automaticamente para a branch chamada design.
+
+git push origin :design | Este comando remove a branch remota design.
+
+git fetch origin | Este comando verifica todas as atualizações que foram realizadas no repositório de atalho origin.
