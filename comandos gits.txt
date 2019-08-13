@@ -84,3 +84,65 @@ git rebase -i master
 git checkout master
 git merge temporary-branch
 >>>>>>> master
+
+--
+git checkout apenas no arquivo desfaz a altearação apenas nela, sem ter feito o git add.
+
+se ja tiver feito o git add, tem que tirar ele do grupo do commit.
+
+git resete HEAD (ultimo estado antes de ser commitado.) NOME DO ARQUIVO
+
+AI AGORA faço o git checkout do arquivo.
+
+
+agora se o mesmo já foi comitado
+descartar o commit local.
+git reset IDENTIFICACAO DO COMMIT
+ele não modifica o arquivo, apenas deixa modificar os arquivos que 
+foram comitados.
+
+--
+
+git revert um IDENTI DO COMMIT ANTIGO, e volta 
+no commit anterior
+--
+
+git stash list pra guardar local
+git stash pop retoma o ultilmo stash
+git stash apply nome 
+
+--
+
+saber onde foi alterado algum código
+
+git bisect start
+git bisect bad HEAD
+git bisect good IDENTIFICACAO DO COMMIT
+
+
+--
+
+git checkout -- design
+Essa notação de dois hífens -- indica que os parâmetros seguintes serão todos nomes de arquivos, permitindo que restauremos o arquivo design ao estado original.
+ESTUDAR BISECT e pra que usar
+
+Como descartamos as alterações do arquivo index.html que estão no index?
+
+Alternativa correta
+git reset HEAD index.html
+
+ 
+Ao realizarmos o comando git reset HEAD index.html, as alterações no arquivo index.html que estão no index serão revertidas para o working directory.
+
+HEAD~1
+
+ 
+Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^.
+
+enviar apenas um commit para a master
+
+git checkout master
+
+git cherry-pick e envia a mesma para master
+
+estudar mais sobre o git rebase master desenvolvimento.
