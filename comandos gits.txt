@@ -33,3 +33,15 @@ Para utilizá-lo, primeiro é preciso ir para a branch para a qual se quer levar
 a "master" (git checkout master). Em seguida, deve-se dizer para o comando git merge de qual branch virão os
 commits novos, que, no caso, é a branch "desenvolvimento". Para isso, basta executar git merge desenvolvimento.
 
+
+
+Basicamente, o que o rebase faz é reproduzir, commit por commit, as ações que você desejar. No nosso caso, reproduzindo os novos commits de master no branch feature.
+
+E se você não se sente confortável com o Git Rebase, você pode treinar o Rebase em um branch temporário. Assim, se você fizer besteira, você pode tentar de novo fazendo um checkout do branch original:
+
+git checkout feature
+git checkout -b temporary-branch
+git rebase -i master
+# [Clean up the history]
+git checkout master
+git merge temporary-branch
