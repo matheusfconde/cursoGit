@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 AAAAAAAAAAAAAAAAAAAAAAAAAA VAI DEITAR
 
 
 
 ASFDADSDFASDFASDFA
+=======
+afdsfasdfadsf
+fsdafads
+sddfadsfar
+asdfasdfadsafasdf
+>>>>>>> teste2
